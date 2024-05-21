@@ -122,9 +122,25 @@ var {
 var Button = styled("button", {
   fontFamily: "$default",
   background: "$ignite300",
-  borderRadius: "$md",
-  padding: "$4",
-  border: 0
+  borderRadius: "$sm",
+  border: 0,
+  fontWeight: "bold",
+  color: "$white",
+  variants: {
+    size: {
+      small: {
+        fontSize: 12,
+        padding: "$4 $8"
+      },
+      big: {
+        fontSize: 8,
+        padding: "$9 $18"
+      }
+    }
+  },
+  defaultVariants: {
+    size: "small"
+  }
 });
 export {
   Button

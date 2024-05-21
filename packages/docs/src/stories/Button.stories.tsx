@@ -1,20 +1,18 @@
-import type { StoryObj, Meta } from '@storybook/react';
-import { Button } from '@ignite-ui/react';
+import type { StoryObj, Meta } from '@storybook/react'
+import { Button, ButttonProps } from '@ignite-ui/react'
 
 export default {
-  title: 'Example/Button', 
+  title: 'Example/Button',
   component: Button,
-} as Meta;
-
-export const Primary: StoryObj = {
   args: {
-    primary: true,
-    label: 'Button',
+    children: 'Send',
   },
-};
+} as Meta<ButttonProps>
 
-export const Secondary: StoryObj = {
+export const Primary: StoryObj<ButttonProps> = {}
+
+export const Big: StoryObj<ButttonProps> = {
   args: {
-  children: 'Send',
+    size: 'small',
   },
-};
+}
