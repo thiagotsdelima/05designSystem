@@ -13,7 +13,8 @@ var colors = {
   ignite300: "#00B37E",
   ignite500: "#00875F",
   ignite700: "#015F43",
-  ignite900: "#00291D"
+  ignite900: "#00291D",
+  test: "#fff"
 };
 
 // src/space.ts
@@ -51,7 +52,7 @@ var fonts = {
   code: "monospace"
 };
 
-// src/fontSizes.ts
+// src/font-sizes.ts
 var fontSizes = {
   xxs: "0.625rem",
   xs: "0.75rem",
@@ -68,14 +69,14 @@ var fontSizes = {
   "9xl": "6rem"
 };
 
-// src/fontWeights.ts
+// src/font-weights.ts
 var fontWeights = {
   regular: "400",
   medium: "500",
   bold: "700"
 };
 
-// src/lineHeights.ts
+// src/line-heights.ts
 var lineHeights = {
   shorter: "125%",
   short: "140%",
