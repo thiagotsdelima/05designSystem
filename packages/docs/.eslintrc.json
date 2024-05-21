@@ -1,5 +1,6 @@
 {
   "extends": [
+    "@ignite-ui/eslint-config",
     "next/core-web-vitals",
     "plugin:storybook/recommended"
   ]
