@@ -14,5 +14,7 @@ export const Primary: StoryObj = {
 };
 
 export const Secondary: StoryObj = {
-
+  args: {
+  children: 'Send',
+  },
 };
