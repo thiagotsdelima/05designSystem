@@ -27,4 +27,4 @@ export const Button = styled('button', {
   },
 })
 
-export type ButttonProps = ComponentProps<typeof Button>
+export type ButtonProps = ComponentProps<typeof Button>
