@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: read
     steps:  
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,4 +27,4 @@ jobs:
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.MY_TOKEN_PERSONAL }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
