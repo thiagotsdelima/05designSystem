@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/thiagotsdelima.png',
     alt: 'Thiago T S Lima',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
