@@ -9,6 +9,11 @@
     "deploy-storybook": "storybook-to-ghpages",
     "build": "build-storybook"
   },
+  "storybook-deployer": {
+    "gitUsername": "thiagotsdelima",
+    "gitEmail": "thiagotsdelima@outlook.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
