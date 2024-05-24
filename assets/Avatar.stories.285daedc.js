@@ -1,0 +1,2 @@
+import{A as t}from"./index.4b276ef1.js";import"./index.d409b571.js";import"./iframe.424f9f8a.js";import"./index.c1bed8aa.js";import"./jsx-runtime.66e991fc.js";const m={title:"Data display/Avatar",component:t,args:{src:"https://github.com/thiagotsdelima.png",alt:"Thiago T S Lima"},argTypes:{src:{control:{type:"text"}}}},p={},c={args:{src:void 0}},e=["Primary","WithFallback"];export{p as Primary,c as WithFallback,e as __namedExportsOrder,m as default};
+//# sourceMappingURL=Avatar.stories.285daedc.js.map
