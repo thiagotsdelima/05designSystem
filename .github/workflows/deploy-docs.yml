@@ -18,16 +18,16 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - run: npm install
 
       - name: Build Project
         run: npm run build
         env:
-          TURBO_TOKEN: NfCHREzLcqgSQ9bCKxcKIuwU
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: thiagos-projects-a8c2a455
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
