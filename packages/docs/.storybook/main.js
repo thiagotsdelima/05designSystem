@@ -16,6 +16,9 @@ module.exports = {
   "features": {
     "storyStoreV7": true
   },
+  docs: {
+    autodocs: "tag",
+  },
 viteFinal: (config, { configType}) => {
   if (configType === 'PRODUCTION') {
     config.base = '/05designSystem'

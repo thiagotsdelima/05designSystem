@@ -24,10 +24,9 @@ jobs:
         run: npm run build
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-          TURBO_TEAM: thiago's projects
+          TURBO_TEAM: thiagotsdelima
 
-      - name: Deploy Storybook
-        working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+      - name: Deploy storybook to GitHub Pages
+        run: npm run deploy-storybook -- --ci
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
