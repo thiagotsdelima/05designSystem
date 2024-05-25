@@ -25,11 +25,11 @@ jobs:
       - name: Build Project
         run: npm run build
         env:
-          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TOKEN: ${{ secrets.REPO_TURBO_TOKEN }}
           TURBO_TEAM: thiagos-projects-a8c2a455
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
